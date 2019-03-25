@@ -72,7 +72,7 @@ Take your note here if you want. (Optional)
 5.觀察user botton的電路圖做判斷式，讓其確認botton按下後使藍色LED持續閃爍
 
 ![](https://github.com/Hung17/ESEmbedded_HW04/blob/master/images/5.png)
-
+```C
 #include <stdint.h>
 #include "blink.h"
 #include "reg.h"
@@ -92,3 +92,4 @@ int main(void)
 	while(!READ_BIT(GPIO_BASE(GPIO_PORTA) + GPIOx_IDR_OFFSET, IDR_0_BIT(GPIO_PORTA)));
 	blink(LED_BLUE);
 }
+```
